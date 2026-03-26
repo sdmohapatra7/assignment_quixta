@@ -2,15 +2,16 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Grid, Server, ChevronRight, Settings } from "lucide-react";
+import { ArrowRight, Grid, Server } from "lucide-react";
+import { Variants } from "framer-motion";
 
 export default function Home() {
-  const fadeUp: any = {
+  const fadeUp: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
   };
 
-  const staggerContainer: any = {
+  const staggerContainer: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -41,13 +42,13 @@ export default function Home() {
         >
           <motion.h1 variants={fadeUp} className="text-5xl md:text-7xl font-bold tracking-tight leading-tight">
             Future of Advanced <br/>
-            <span className="text-white">Materials</span> {/* Removed gradient-text since original looks white */}
+            <span className="text-white">Materials</span>
           </motion.h1>
           <motion.p variants={fadeUp} className="text-gray-300 text-lg md:text-xl max-w-2xl px-4">
-            Revolutionize your manufacturing process with our innovative advanced materials.
+            Our state-of-the-art materials are lighter, stronger, and more resilient than ever before.
           </motion.p>
           <motion.button variants={fadeUp} className="mt-8 px-10 py-3 bg-white text-black rounded-full font-semibold hover:bg-gray-200 transition-all flex items-center justify-center text-sm tracking-wide">
-            Explore 
+            Discover 
           </motion.button>
         </motion.div>
       </section>
@@ -62,7 +63,7 @@ export default function Home() {
         >
           <div className="flex-1">
             <h2 className="text-3xl md:text-[2.5rem] leading-snug font-light text-gray-300">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet.
             </h2>
           </div>
           
@@ -96,7 +97,7 @@ export default function Home() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod.
           </p>
           <button className="relative z-10 mt-6 px-10 py-3 bg-white text-black rounded-full text-sm font-semibold hover:bg-gray-200 transition-all">
-            Explore
+            Read More
           </button>
         </motion.div>
       </section>
@@ -117,8 +118,8 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-4 text-[#e0e0e0]">High-performance materials</h3>
-                <p className="text-gray-400 mb-6 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et.</p>
-                <button className="text-xs uppercase bg-[#ff8a00] hover:bg-[#ff9a2b] transition-colors text-black px-6 py-2 rounded-full font-bold tracking-wide">Explore</button>
+                <p className="text-gray-400 mb-6 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                <button className="text-xs uppercase bg-[#ff8a00] hover:bg-[#ff9a2b] transition-colors text-black px-6 py-2 rounded-full font-bold tracking-wide">Learn More</button>
               </div>
             </motion.div>
             
@@ -130,8 +131,8 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-4 text-[#e0e0e0]">Integration Services</h3>
-                <p className="text-gray-400 mb-6 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et.</p>
-                <button className="text-xs uppercase bg-[#ff8a00] hover:bg-[#ff9a2b] transition-colors text-black px-6 py-2 rounded-full font-bold tracking-wide">Explore</button>
+                <p className="text-gray-400 mb-6 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                <button className="text-xs uppercase bg-[#ff8a00] hover:bg-[#ff9a2b] transition-colors text-black px-6 py-2 rounded-full font-bold tracking-wide">Learn More</button>
               </div>
             </motion.div>
           </motion.div>
@@ -162,7 +163,7 @@ export default function Home() {
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
           <h2 className="text-3xl md:text-4xl font-bold">The Science Behind Our<br/>Innovative Solutions</h2>
           <button className="text-xs uppercase bg-[#ff8a00] hover:bg-[#ff9a2b] text-black px-6 py-2.5 rounded-full font-bold tracking-widest transition-colors">
-            Explore
+            Discover
           </button>
         </motion.div>
 
@@ -206,7 +207,7 @@ export default function Home() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <button className="px-8 py-3 bg-white text-black font-semibold text-sm rounded-full transition-all">
-            Read More
+            Discover
           </button>
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ duration: 1 }} variants={{ hidden: { opacity: 0, scale: 0.9 }, visible: { opacity: 1, scale: 1 } }} className="flex-1 relative h-[500px] w-full">
@@ -220,7 +221,7 @@ export default function Home() {
         
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="md:pl-16">
           <h2 className="text-3xl font-bold mb-16 flex items-center justify-between">
-            What's New in Tech
+            What&apos;s New in Science
           </h2>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -256,11 +257,11 @@ export default function Home() {
             <div className="absolute -left-24 bottom-0 w-80 h-80 bg-purple-600 rounded-full blur-[100px] opacity-20" />
             
             <div className="relative z-10 flex flex-col h-full justify-between gap-12">
-              <h2 className="text-4xl md:text-5xl font-bold">Have Questions?<br/>Let's Talk!</h2>
+              <h2 className="text-4xl md:text-5xl font-bold">Have Questions?<br/>Let&apos;s Talk!</h2>
               <div className="flex flex-col md:flex-row md:items-center gap-6 md:justify-between">
-                <span className="text-gray-400  max-w-xs text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                <span className="text-gray-400  max-w-xs text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et</span>
                 <button className="px-8 py-3 bg-white text-black font-semibold text-sm rounded-full transition-all self-start">
-                  Explore
+                  Contact Us
                 </button>
               </div>
             </div>

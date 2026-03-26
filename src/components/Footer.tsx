@@ -1,43 +1,61 @@
-import { Linkedin, Twitter, Divide } from "lucide-react";
+import { Linkedin, Twitter, Facebook } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="border-t border-[#1a1a1a] bg-[#0c0c0c] py-20 px-6 mt-24 text-gray-400">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-16 md:gap-8">
-        {/* Brand */}
-        <div className="flex flex-col gap-6 max-w-sm">
-          <span className="text-2xl font-bold tracking-widest text-white uppercase">IDYLLIC</span>
-          <p className="text-sm leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod.
-          </p>
-          <div className="flex gap-4 mt-2">
-            <div className="w-10 h-10 rounded-full border border-gray-700 bg-[#161616] flex items-center justify-center hover:border-gray-400 cursor-pointer transition-colors text-white">
-              <span className="font-bold text-sm">in</span>
-            </div>
-            <div className="w-10 h-10 rounded-full border border-gray-700 bg-[#161616] flex items-center justify-center hover:border-gray-400 cursor-pointer transition-colors text-white">
-              <Twitter size={18} fill="currentColor" className="text-white" />
-            </div>
+      <div className="max-w-7xl mx-auto flex flex-col gap-12">
+        {/* Top Header info */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-[#1a1a1a] pb-10 gap-6">
+          <span className="text-3xl font-light tracking-widest text-white uppercase">LOGO</span>
+          <div className="flex flex-col md:flex-row gap-8 md:gap-32 text-sm text-gray-300">
+            <span className="font-medium">+12 34567 8900</span>
+            <span className="font-medium">email@email.com</span>
           </div>
         </div>
 
-        {/* Links Array */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-16 text-sm">
-          <div className="flex flex-col gap-5">
-            <span className="font-bold text-white mb-2">Company Info</span>
-            <a href="#" className="hover:text-white transition">About</a>
-            <a href="#" className="hover:text-white transition">Careers</a>
-            <a href="#" className="hover:text-white transition">Contact Us</a>
+        {/* Main Content */}
+        <div className="flex flex-col lg:flex-row justify-between gap-16">
+          {/* Brand Note & Socials */}
+          <div className="flex flex-col gap-6 max-w-sm">
+            <p className="text-sm leading-relaxed text-gray-400">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
+            </p>
+            <div className="flex gap-4 mt-2">
+              <a href="#" className="w-10 h-10 rounded-full border border-gray-700 bg-transparent flex items-center justify-center hover:border-gray-400 cursor-pointer transition-colors text-white">
+                <Linkedin size={18} />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full border border-gray-700 bg-transparent flex items-center justify-center hover:border-gray-400 cursor-pointer transition-colors text-white">
+                <Twitter size={18} />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full border border-gray-700 bg-transparent flex items-center justify-center hover:border-gray-400 cursor-pointer transition-colors text-white">
+                <Facebook size={18} />
+              </a>
+            </div>
           </div>
-          <div className="flex flex-col gap-5">
-            <span className="font-bold text-white mb-2">Services</span>
-            <a href="#" className="hover:text-white transition">Service 1</a>
-            <a href="#" className="hover:text-white transition">Service 2</a>
-            <a href="#" className="hover:text-white transition">Service 3</a>
-          </div>
-          <div className="flex flex-col gap-5">
-            <span className="font-bold text-white mb-2">Legal policies</span>
-            <a href="#" className="hover:text-white transition">Terms & Conditions</a>
-            <a href="#" className="hover:text-white transition">Privacy Policy</a>
+
+          {/* Links Array */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-16 md:gap-24 text-sm w-full lg:w-auto">
+            <div className="flex flex-col gap-4">
+              <a href="#" className="hover:text-white transition">Home</a>
+              <a href="#" className="hover:text-white transition">About</a>
+              <a href="#" className="hover:text-white transition">Careers</a>
+              <a href="#" className="hover:text-white transition">News</a>
+              <a href="#" className="hover:text-white transition">Contact</a>
+            </div>
+            <div className="flex flex-col gap-4">
+              <a href="#" className="hover:text-white transition">Service</a>
+              <a href="#" className="hover:text-white transition">Contact us</a>
+              <a href="#" className="hover:text-white transition">Careers</a>
+              <a href="#" className="hover:text-white transition">History</a>
+              <a href="#" className="hover:text-white transition">...</a>
+            </div>
+            <div className="flex flex-col gap-4">
+              <a href="#" className="hover:text-white transition">About Us</a>
+              <a href="#" className="hover:text-white transition">Our Projects</a>
+              <a href="#" className="hover:text-white transition">Archive</a>
+              <a href="#" className="hover:text-white transition">Our Team</a>
+              <a href="#" className="hover:text-white transition">Join</a>
+            </div>
           </div>
         </div>
       </div>

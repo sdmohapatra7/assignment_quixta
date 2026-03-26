@@ -31,10 +31,9 @@ export default function Navbar() {
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-12 text-sm text-gray-300 font-medium tracking-wide">
           <Link href="/" className="hover:text-white transition-colors">Home</Link>
-          <Link href="#about" className="hover:text-white transition-colors">About Us</Link>
-          <Link href="#solutions" className="hover:text-white transition-colors">Solutions</Link>
-          <Link href="#news" className="hover:text-white transition-colors">News</Link>
-          <Link href="#contact" className="hover:text-white transition-colors">Contact Us</Link>
+          <Link href="#about" className="hover:text-white transition-colors">About</Link>
+          <Link href="#services" className="hover:text-white transition-colors">Services</Link>
+          <Link href="#contact" className="hover:text-white transition-colors">Contact</Link>
         </div>
 
         {/* Buttons */}
@@ -57,10 +56,9 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden absolute top-20 left-0 w-full bg-black/95 backdrop-blur-xl border-b border-white/10 flex flex-col items-center py-6 space-y-4 shadow-2xl">
           <Link href="/" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>Home</Link>
-          <Link href="#about" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>About Us</Link>
-          <Link href="#solutions" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>Solutions</Link>
-          <Link href="#news" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>News</Link>
-          <Link href="#contact" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>Contact Us</Link>
+          <Link href="#about" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>About</Link>
+          <Link href="#services" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>Services</Link>
+          <Link href="#contact" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>Contact</Link>
           <div className="w-full flex flex-col px-6 space-y-3 pt-4 border-t border-white/10">
             <Link href="/login" className="text-center bg-white text-black py-2 rounded-full font-semibold" onClick={() => setIsOpen(false)}>Log in</Link>
           </div>
